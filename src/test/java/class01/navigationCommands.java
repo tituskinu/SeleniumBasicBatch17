@@ -6,29 +6,30 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class navigationCommands {
     public static void main(String[] args) throws InterruptedException {
         WebDriver driver=new ChromeDriver();
-        // go to google.com
-
-        driver.get("http://www.google.com");
-        //max the window
+//        go to google.com
+        driver.get("https://www.google.com");
+//        max the window
         driver.manage().window().maximize();
-        //slow down to observe the process
+//        slow down to observe the process
         Thread.sleep(2000);
-        //go to facebook.com
-        driver.navigate().to("http://facebook.com");
-        //slow down for observation
+//        goto facebook.com
+        driver.navigate().to("https://www.facebook.com");
+//        slow down to observe
         Thread.sleep(2000);
-        //go back
+//        go back
         driver.navigate().back();
-        //go forward
+//        slow down to observe
+        Thread.sleep(2000);
+//        go forward
         driver.navigate().forward();
-        //slow down for observation
+//           slow down to observe
         Thread.sleep(2000);
         driver.navigate().refresh();
-        //close
+
+//        close
         driver.close();
-        //also we can use
-        //driver.quite();
-
-
+//        also we can use
+//        driver.quit();
     }
 }
+// 8:45
